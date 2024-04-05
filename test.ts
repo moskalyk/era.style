@@ -332,10 +332,8 @@ const library = {
     switch(sign){
         case values[0]:
             directions.push(indexes[7])
-            directions.push(indexes[7])
             break;
         case values[1]:
-            directions.push(indexes[0])
             directions.push(indexes[0])
             break;
         case values[2]:
@@ -444,10 +442,8 @@ const library = {
             break;
         case values[28]:
             directions.push(indexes[2])
-            directions.push(indexes[2])
             break;
         case values[29]:
-            directions.push(indexes[5])
             directions.push(indexes[5])
             break;
         case values[30]:
@@ -536,7 +532,6 @@ const library = {
             break;
         case values[51]:
             directions.push(indexes[1])
-            directions.push(indexes[1])
             break;
         case values[52]:
             directions.push(indexes[3])
@@ -589,5 +584,5 @@ const library = {
     }
 
     printBusinessesInSector(directions[0]);
-    printBusinessesInSector(directions[1]);
+    directions[1] && printBusinessesInSector(directions[1]);
 })()
